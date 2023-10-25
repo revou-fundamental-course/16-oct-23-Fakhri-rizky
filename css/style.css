@@ -1,0 +1,100 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5cm 2cm;
+  border-bottom: 1px solid black;
+}
+
+.nav-logo img {
+  max-height: 50px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-item {
+  padding: 2px 1cm;
+  border: 0.5px solid black;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:hover {
+  background: lightgrey;
+}
+
+.greeting {
+  margin-top: 2cm;
+  margin-left: 3cm;
+}
+.banner {
+  border-bottom: 1px solid black;
+  /* background-image: url("/assets/pantai.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 578px;
+  width: 100%;
+}
+
+.headquarters {
+  padding: 3cm;
+  border-bottom: 1px solid black;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.text > p {
+  display: flex;
+  padding-top: 4cm;
+  padding-left: 1.3cm;
+}
+
+.hq-items {
+  padding: 2cm;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  border-bottom: 1px solid black;
+  padding-bottom: 3cm;
+  padding-top: 2cm;
+}
+
+.form-left {
+  padding: 1cm;
+  margin-left: 2cm;
+}
+
+.form-right {
+  float: right;
+  padding: 1cm;
+  border: 1px solid black;
+  width: 40%;
+  margin-right: 3cm;
+  margin-top: -8cm;
+}
+
+.footer-text {
+  font-size: medium;
+  color: grey;
+  text-align: right;
+}
+
+input[type="date"] {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+}

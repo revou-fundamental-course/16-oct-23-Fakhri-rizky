@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-logo">
+        <img src="/assets/revo.png" alt="logo" />
+      </div>
+      <nav class="nav">
+        <div class="nav-item">Home</div>
+        <div class="nav-item">Our profile</div>
+        <div class="nav-item">Portofolio</div>
+        <a href="#message-us" class="nav-item">Message Us</a>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="greeting">
+        <h1>Hi, my name is Fakhri</h1>
+        <p>Ini adalah latihan website pertama</p>
+      </div>
+    </section>
+    <section class="headquarters">
+      <h1>Our Headquarters</h1>
+      <div class="hq-items">
+        <div class="circle text"><p>Jakarta</p></div>
+        <div class="circle text"><p>Bandung</p></div>
+        <div class="circle text"><p>Surabaya</p></div>
+      </div>
+    </section>
+    <section class="form" id="message-us">
+      <div class="form-left">
+        <h1>Message us</h1>
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                placeholder="Nama"
+                size="31"
+              />
+            </td>
+            <td><p id="nama-kosong"></p></td>
+          </tr>
+          <tr>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td>
+              <input type="date" name="tanggal" id="tanggal" />
+            </td>
+            <td><p id="tanggal-kosong"></p></td>
+          </tr>
+          <tr>
+            <td>Jenis kelamin</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="jk" id="laki-laki" value="Laki-Laki" />
+              <label for="laki-laki">Laki-Laki</label>
+              <input type="radio" name="jk" id="perempuan" value="Perempuan" />
+              <label for="perempuan">Perempuan</label>
+            </td>
+            <td><p id="jk-kosong"></p></td>
+          </tr>
+          <tr>
+            <td>Pesan</td>
+            <td>:</td>
+            <td>
+              <textarea
+                name="pesan"
+                id="pesan"
+                cols="30"
+                rows="10"
+                placeholder="Pesan"
+              ></textarea>
+            </td>
+            <td><p id="pesan-kosong"></p></td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <input type="submit" value="Submit" id="submit" size="30" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="form-right">
+        <table>
+          <tr>
+            <td><b>Current time</b></td>
+            <td>:</td>
+            <td><p id="show-time"></p></td>
+          </tr>
+
+          <tr>
+            <td><b>Nama</b></td>
+            <td>:</td>
+            <td><p id="show-nama"></p></td>
+          </tr>
+          <tr>
+            <td><b>tanggal lahir</b></td>
+            <td>:</td>
+            <td><p id="show-tanggal"></p></td>
+          </tr>
+          <tr>
+            <td><b>Jenis kelamin</b></td>
+            <td>:</td>
+            <td><p id="show-jk"></p></td>
+          </tr>
+          <tr>
+            <td><b>Pesan</b></td>
+            <td>:</td>
+            <td><p id="show-pesan"></p></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer-text">Made by Fakhri</p>
+    </footer>
+    <script src="/jss/script.js"></script>
+  </body>
+</html>
