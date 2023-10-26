@@ -3,127 +3,328 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fakhri Rizky Website - Machina</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="nav-logo">
-        <img src="/assets/revo.png" alt="logo" />
+    <!-- Header -->
+    <header>
+      <div class="main-container">
+        <div class="nav">
+          <div class="logo">
+            <a href="/">Machina</a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#hero">Profile</a></li>
+              <li><a href="#portofolio">Portofolio</a></li>
+              <li><a href="#message">Message Us</a></li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+        </div>
+        <section id="hero">
+          <div class="hero-left">
+            <h3 class="pre-title">Welcome to Website</h3>
+            <h1 class="hero-name">Hi, Fakhri <span>Rizky</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="hero-right">
+            <div class="slideshow">
+              <div class="mySlide fade">
+                <img src="/assets/motor1.jpg" alt="motor1" />
+              </div>
+              <div class="mySlide fade">
+                <img src="/assets/motor2.jpg" alt="motor2" />
+              </div>
+              <div class="mySlide fade">
+                <img src="/assets/motor3.jpg" alt="motor3" />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <nav class="nav">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">Our profile</div>
-        <div class="nav-item">Portofolio</div>
-        <a href="#message-us" class="nav-item">Message Us</a>
-      </nav>
     </header>
-    <section class="banner">
-      <div class="greeting">
-        <h1>Hi, my name is Fakhri</h1>
-        <p>Ini adalah latihan website pertama</p>
-      </div>
-    </section>
-    <section class="headquarters">
-      <h1>Our Headquarters</h1>
-      <div class="hq-items">
-        <div class="circle text"><p>Jakarta</p></div>
-        <div class="circle text"><p>Bandung</p></div>
-        <div class="circle text"><p>Surabaya</p></div>
-      </div>
-    </section>
-    <section class="form" id="message-us">
-      <div class="form-left">
-        <h1>Message us</h1>
-        <table>
-          <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td>
-              <input
-                type="text"
-                name="nama"
-                id="nama"
-                placeholder="Nama"
-                size="31"
-              />
-            </td>
-            <td><p id="nama-kosong"></p></td>
-          </tr>
-          <tr>
-            <td>Tanggal Lahir</td>
-            <td>:</td>
-            <td>
-              <input type="date" name="tanggal" id="tanggal" />
-            </td>
-            <td><p id="tanggal-kosong"></p></td>
-          </tr>
-          <tr>
-            <td>Jenis kelamin</td>
-            <td>:</td>
-            <td>
-              <input type="radio" name="jk" id="laki-laki" value="Laki-Laki" />
-              <label for="laki-laki">Laki-Laki</label>
-              <input type="radio" name="jk" id="perempuan" value="Perempuan" />
-              <label for="perempuan">Perempuan</label>
-            </td>
-            <td><p id="jk-kosong"></p></td>
-          </tr>
-          <tr>
-            <td>Pesan</td>
-            <td>:</td>
-            <td>
-              <textarea
-                name="pesan"
-                id="pesan"
-                cols="30"
-                rows="10"
-                placeholder="Pesan"
-              ></textarea>
-            </td>
-            <td><p id="pesan-kosong"></p></td>
-          </tr>
-          <tr>
-            <td colspan="3">
-              <input type="submit" value="Submit" id="submit" size="30" />
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="form-right">
-        <table>
-          <tr>
-            <td><b>Current time</b></td>
-            <td>:</td>
-            <td><p id="show-time"></p></td>
-          </tr>
 
-          <tr>
-            <td><b>Nama</b></td>
-            <td>:</td>
-            <td><p id="show-nama"></p></td>
-          </tr>
-          <tr>
-            <td><b>tanggal lahir</b></td>
-            <td>:</td>
-            <td><p id="show-tanggal"></p></td>
-          </tr>
-          <tr>
-            <td><b>Jenis kelamin</b></td>
-            <td>:</td>
-            <td><p id="show-jk"></p></td>
-          </tr>
-          <tr>
-            <td><b>Pesan</b></td>
-            <td>:</td>
-            <td><p id="show-pesan"></p></td>
-          </tr>
-        </table>
+    <section id="portofolio">
+      <div class="portofolio main-container">
+        <h3 class="pre-title">Profile</h3>
+        <h1 class="section-title portofolio-title">Portofolio</h1>
+        <div class="grid-3">
+          <div class="portofolio">
+            <div class="portofolio-icon">
+              <img src="/assets/js.png" alt="" />
+            </div>
+            <h4>Javascript</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="portofolio">
+            <div class="portofolio-icon">
+              <img src="/assets/react.png" alt="" />
+            </div>
+            <h4>ReactJs</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="portofolio">
+            <div class="portofolio-icon">
+              <img src="/assets/node.png" alt="" />
+            </div>
+            <h4>NodeJs</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <footer class="footer">
-      <p class="footer-text">Made by Fakhri</p>
+
+    <section id="vision">
+      <div class="vision main-containers">
+        <h3 class="pre-title">About</h3>
+        <div class="grid-2">
+          <div class="vision">
+            <h1>Vision</h1>
+            <div class="vision-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.006 11.87c-.43-1.406-1.596-2.484-3.062-2.761 1.773-.661 3.538.942 3.062 2.761zm2.638 3.359c-.424.524-.931.971-1.493 1.334l1.143 1.143c.194.196.45.294.706.294s.512-.098.707-.293c.391-.391.391-1.023 0-1.414l-1.063-1.064zm-4.894 1.354c-2.284 0-4.475-1.432-5.164-4.266-.203-.839-.307-1.027-.586-1.038-.279.011-.384.198-.586 1.038-.688 2.833-2.879 4.266-5.164 4.266-2.381 0-4.462-1.603-5.094-3.865-.66-.14-1.156-.726-1.156-1.426s.495-1.285 1.153-1.425c.632-2.262 2.718-3.867 5.097-3.867 2.248 0 4.206 1.399 4.958 3.471.257-.096.525-.145.792-.148.267.003.535.053.792.148.753-2.072 2.71-3.471 4.958-3.471 2.379 0 4.465 1.605 5.098 3.866.658.14 1.152.726 1.152 1.426s-.496 1.287-1.156 1.426c-.631 2.261-2.713 3.865-5.094 3.865zm-8.167-5.291c0-1.839-1.496-3.335-3.334-3.335-1.839 0-3.334 1.496-3.334 3.335s1.496 3.334 3.334 3.334c1.839 0 3.334-1.496 3.334-3.334zm11.502 0c0-1.839-1.495-3.335-3.335-3.335-1.838 0-3.334 1.496-3.334 3.335s1.496 3.334 3.334 3.334c1.84 0 3.335-1.496 3.335-3.334zm-19.729 3.937l-1.063 1.063c-.391.391-.391 1.023 0 1.414.195.196.451.294.707.294s.512-.098.707-.293l1.143-1.143c-.563-.364-1.07-.811-1.494-1.335zm2.638-3.359c.43-1.406 1.597-2.484 3.062-2.761-1.773-.661-3.539.942-3.062 2.761z"
+                />
+              </svg>
+            </div>
+            <p>
+              1.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              2. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="vision">
+            <h1>Mission</h1>
+            <div class="vision-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-3 11.25c0 .414-.336.75-.75.75h-4.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h4.5c.414 0 .75.336.75.75zm-11.772-.537c-.151-.135-.228-.321-.228-.509 0-.375.304-.682.683-.682.162 0 .324.057.455.173l.746.665 1.66-1.815c.136-.147.319-.221.504-.221.381 0 .684.307.684.682 0 .163-.059.328-.179.459l-2.116 2.313c-.134.147-.319.222-.504.222-.162 0-.325-.057-.455-.173zm11.772-2.711c0 .414-.336.75-.75.75h-4.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h4.5c.414 0 .75.336.75.75zm-11.772-1.613v.001c-.151-.135-.228-.322-.228-.509 0-.376.304-.682.683-.682.162 0 .324.057.455.173l.746.664 1.66-1.815c.136-.147.319-.221.504-.221.381 0 .684.308.684.682 0 .164-.059.329-.179.46l-2.116 2.313c-.134.147-.319.221-.504.221-.162 0-.325-.057-.455-.173zm11.772-1.639c0 .414-.336.75-.75.75h-4.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h4.5c.414 0 .75.336.75.75z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </div>
+            <p>
+              1.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              2. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="headquarter">
+      <div class="headquarter main-containers">
+        <h3 class="pre-title">About</h3>
+        <h1 class="section-title portofolio-title">Our Headquarter</h1>
+        <div class="grid-3">
+          <div class="headquarter">
+            <img src="assets/jakarta.jpg" alt="" />
+            <h4>Jakarta</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="headquarter">
+            <img src="assets/bandung.jpg" alt="" />
+            <h4>Bandung</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="headquarter">
+            <img src="assets/surabaya.jpg" alt="" />
+            <h4>Surabaya</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+      </div>
+    </section>
+    <section id="message">
+      <div class="message main-container">
+        <h3 class="pre-title">Contact</h3>
+        <h1 class="section-title message-title">Message Us</h1>
+        <div class="grid-2">
+        <div class="message">
+          
+          
+            <table>
+              <form class="message-form" action=""></form>
+              <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>
+                  <input type="text" name="nama" id="nama" placeholder="Nama" />
+                </td>
+                <td><p id="nama-kosong"></p></td>
+              </tr>
+              <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td>
+                  <input type="date" name="tanggal" id="tanggal" />
+                </td>
+                <td><p id="tanggal-kosong"></p></td>
+              </tr>
+              <tr>
+                <td>Jenis kelamin</td>
+                <td>:</td>
+                <td>
+                  <input
+                    type="radio"
+                    name="jk"
+                    id="laki-laki"
+                    value="Laki-Laki"
+                  />
+                  <label for="laki-laki">Laki-Laki</label>
+                  <input
+                    type="radio"
+                    name="jk"
+                    id="perempuan"
+                    value="Perempuan"
+                  />
+                  <label for="perempuan">Perempuan</label>
+                </td>
+                <td><p id="jk-kosong"></p></td>
+              </tr>
+              <tr>
+                <td>Pesan</td>
+                <td>:</td>
+                <td>
+                  <textarea
+                    name="pesan"
+                    id="pesan"
+                    cols="30"
+                    rows="10"
+                    placeholder="Pesan"
+                  ></textarea>
+                </td>
+                <td><p id="pesan-kosong"></p></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <input type="submit" value="Submit" id="submit"/>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div class="message">
+          <table>
+            <tr>
+              <td><b>Current time</b></td>
+              <td>:</td>
+              <td><p id="show-time"></p></td>
+            </tr>
+
+            <tr>
+              <td><b>Nama</b></td>
+              <td>:</td>
+              <td><p id="show-nama"></p></td>
+            </tr>
+            <tr>
+              <td><b>tanggal lahir</b></td>
+              <td>:</td>
+              <td><p id="show-tanggal"></p></td>
+            </tr>
+            <tr>
+              <td><b>Jenis kelamin</b></td>
+              <td>:</td>
+              <td><p id="show-jk"></p></td>
+            </tr>
+            <tr>
+              <td><b>Pesan</b></td>
+              <td>:</td>
+              <td><p id="show-pesan"></p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-icons">
+        <a href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            />
+          </svg>
+        </a>
+        <a href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            />
+          </svg>
+        </a>
+        <a href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </div>
+      <p>&#169; 2023 - Made by Fakhri Rizky</p>
     </footer>
-    <script src="/jss/script.js"></script>
+    <script src="./jss/script.js"></script>
   </body>
 </html>

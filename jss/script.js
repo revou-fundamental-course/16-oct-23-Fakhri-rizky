@@ -14,6 +14,8 @@ const showName = document.getElementById("show-nama");
 const showTanggal = document.getElementById("show-tanggal");
 const showJk = document.getElementById("show-jk");
 const showPesan = document.getElementById("show-pesan");
+let slideIndex = 0;
+showSlides();
 
 // Submit form
 btnSubmit.addEventListener("click", function () {
@@ -48,3 +50,27 @@ btnSubmit.addEventListener("click", function () {
     }
   }
 });
+
+function showSlides() {
+  let slide = document.getElementsByClassName("mySlide");
+  for (let i = 0; i < slide.length; i++) {
+    slide[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slide.length) slideIndex = 1;
+  slide[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 4000);
+}
+
+// Responsive navbar
+const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const navLists = document.querySelector("nav");
+
+  burger.addEventListener("click", () => {
+    navLists.classList.toggle("nav-active");
+    burger.classList.toggle("toggle-burger");
+  });
+};
+
+navSlide();
