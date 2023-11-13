@@ -75,5 +75,5 @@ const navSlide = () => {
 
 navSlide();
 
-document.querySelector(".first-name").textContent = "Fakhri";
-document.querySelector(".last-name").textContent = "Rizky";
+document.querySelector(".first-name").textContent = "Udaky";
+document.querySelector(".last-name").textContent = "V2";
